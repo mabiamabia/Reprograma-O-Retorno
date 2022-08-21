@@ -1,3 +1,23 @@
 Aprtesentações
 Introdução a teoria de testes
 Repositorio para clonar 
+
+ver a documentação do jest
+https://jestjs.io/docs/expect
+
+describe exemplo:
+https://jestjs.io/docs/expect
+
+Complementando o exemplo:
+Todos os testes são relacionados a usuário, entao antes de cadastrar o usuário, precisa ser validado cada campo:
+
+describe("Cadastro usuario", () => {
+  test('Verifica se usuario adicionou cpf', () => {
+    const cpf = '11122233344'
+    expect(cpf).not.toBeNull()
+  })
+  test('Verifica se usuario adicionou nome', () => {
+    const nome = 'Renata'
+    expect(nome).not.toBeNull()
+  })
+})
